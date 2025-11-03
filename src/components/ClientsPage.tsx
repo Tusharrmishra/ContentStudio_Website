@@ -5,12 +5,53 @@ import { ClientsSlider } from "./ClientsSlider";
 
 const clients = [
   {
+    name: "MPL Poker",
+    industry: "Mobile Gaming",
+    logo: "/images/clients/mpl-logo.jpg",
+    description:
+      "Mobile Premier League's poker offering on India's largest mobile esports platform",
+  },
+  {
+    name: "Gameskraft",
+    industry: "Real Money Gaming",
+    logo: "/images/clients/gameskraft-logo.jpg",
+    description:
+      "Leading online gaming company offering rummy and other skill-based games",
+  },
+  {
+    name: "Seekho",
+    industry: "EdTech",
+    logo: "/images/clients/seekho-logo.jpg",
+    description:
+      "Online learning platform offering courses in multiple vernacular languages",
+  },
+  {
+    name: "Zell Education",
+    industry: "EdTech",
+    logo: "/images/clients/zell-logo.jpg",
+    description: "Premium education platform for competitive exam preparation",
+  },
+  {
+    name: "MyNaksh",
+    industry: "Technology",
+    logo: "/images/clients/mynaksh-logo.jpg",
+    description: "Tech platform offering innovative digital solutions",
+  },
+  {
+    name: "Glance",
+    industry: "Consumer Tech",
+    logo: "/images/clients/glance-logo.jpg",
+    description:
+      "A platform that delivers content,entertainment and commerce experiences directly on lock-screens.",
+  },
+  {
     name: "Pocket52",
     industry: "Online Poker",
     logo: "/images/clients/pocket52-logo.jpg",
     description:
       "Leading online poker platform in India, revolutionizing the gaming experience",
   },
+
   {
     name: "Natural8 India",
     industry: "Poker Tournaments",
@@ -25,13 +66,7 @@ const clients = [
     description:
       "India's largest online poker platform with millions of registered users",
   },
-  {
-    name: "Gameskraft",
-    industry: "Real Money Gaming",
-    logo: "/images/clients/gameskraft-logo.jpg",
-    description:
-      "Leading online gaming company offering rummy and other skill-based games",
-  },
+
   {
     name: "RummyCulture",
     industry: "Online Rummy",
@@ -59,13 +94,7 @@ const clients = [
     description:
       "India's first franchisee-based poker league bringing a sports angle to poker",
   },
-  {
-    name: "MPL Poker",
-    industry: "Mobile Gaming",
-    logo: "/images/clients/mpl-logo.jpg",
-    description:
-      "Mobile Premier League's poker offering on India's largest mobile esports platform",
-  },
+
   {
     name: "Hiscore",
     industry: "Fantasy Sports",
@@ -86,25 +115,6 @@ const clients = [
     logo: "/images/clients/playerzpot-logo.jpg",
     description:
       "Emerging fantasy sports platform with innovative gaming formats",
-  },
-  {
-    name: "Seekho",
-    industry: "EdTech",
-    logo: "/images/clients/seekho-logo.jpg",
-    description:
-      "Online learning platform offering courses in multiple vernacular languages",
-  },
-  {
-    name: "Zell Education",
-    industry: "EdTech",
-    logo: "/images/clients/zell-logo.jpg",
-    description: "Premium education platform for competitive exam preparation",
-  },
-  {
-    name: "MyNaksh",
-    industry: "Technology",
-    logo: "/images/clients/mynaksh-logo.jpg",
-    description: "Tech platform offering innovative digital solutions",
   },
 ];
 
@@ -141,7 +151,7 @@ export function ClientsPage() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 bg-white border-b border-gray-200">
+      {/* <section className="py-16 bg-white border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -159,7 +169,7 @@ export function ClientsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Auto Slider */}
       <section className="py-16 bg-white overflow-hidden">
@@ -237,7 +247,7 @@ export function ClientsPage() {
       </section>
 
       {/* Success Stories */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -297,7 +307,7 @@ export function ClientsPage() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

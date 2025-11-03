@@ -7,21 +7,22 @@ interface Client {
 }
 
 const clients: Client[] = [
+  { name: "MPL Poker", logo: "/images/clients/mpl-logo.jpg" },
+  { name: "Gameskraft", logo: "/images/clients/gameskraft-logo.jpg" },
+  { name: "Seekho", logo: "/images/clients/seekho-logo.jpg" },
+  { name: "Zell Education", logo: "/images/clients/zell-logo.jpg" },
+  { name: "MyNaksh", logo: "/images/clients/mynaksh-logo.jpg" },
+  { name: "Glance", logo: "/images/clients/glance-logo.jpg" },
   { name: "Pocket52", logo: "/images/clients/pocket52-logo.jpg" },
   { name: "Natural8 India", logo: "/images/clients/natural8-logo.jpg" },
   { name: "Adda52", logo: "/images/clients/adda52-logo.jpg" },
-  { name: "Gameskraft", logo: "/images/clients/gameskraft-logo.jpg" },
   { name: "RummyCulture", logo: "/images/clients/rummyculture-logo.jpg" },
   { name: "RummyPrime", logo: "/images/clients/rummyprime-logo.jpg" },
   { name: "RummyTime", logo: "/images/clients/rummytime-logo.jpg" },
   { name: "Poker Sports League", logo: "/images/clients/psl-logo.jpg" },
-  { name: "MPL Poker", logo: "/images/clients/mpl-logo.jpg" },
   { name: "Hiscore", logo: "/images/clients/hiscore-logo.jpg" },
   { name: "SportsBaazi", logo: "/images/clients/sportsbaazi-logo.jpg" },
   { name: "Playerzpot", logo: "/images/clients/playerzpot-logo.jpg" },
-  { name: "Seekho", logo: "/images/clients/seekho-logo.jpg" },
-  { name: "Zell Education", logo: "/images/clients/zell-logo.jpg" },
-  { name: "MyNaksh", logo: "/images/clients/mynaksh-logo.jpg" },
 ];
 
 export function ClientsSlider() {

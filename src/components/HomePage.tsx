@@ -12,28 +12,25 @@ const stats = [
 
 const testimonials = [
   {
-    name: "Poker Community",
-    role: "Players & Streamers",
+    name: "Nitesh Salvi",
+    role: "Founder",
+    company: "MyNaksh",
+    text: "Your Content Studio perfectly balanced performance and brand for our new app, MyNaksh. Their approach to ads and social content was both data-driven and genuinely creative, helping us acquire users while humanizing our brand. They've been an instrumental partner in our early-stage growth and community building.",
+    avatar: "/images/walloflove1.jpg",
+  },
+  {
+    name: "Hemant Vyas",
+    role: "Marketing",
     company: "Pocket52",
-    text: "The Bankroll Challenge was a game-changer! The thrill of playing with our favorite streamers, winning trophies, and the community vibe made every Monday the most exciting night for poker in India.",
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+    text: "Working with Your Content Studio has been a game-changer, as their authentic background in the poker world is something you can't just teach an agency. They skipped the learning curve and immediately delivered high-quality, relatable content that truly gets our audience. Their unique insight has made a measurable impact on how we connect with our community.",
+    avatar: "/images/walloflove2.jpg",
   },
   {
-    name: "Tournament Players",
-    role: "Poker Professionals",
-    company: "Natural8 India",
-    text: "The daily vlogs and content made us feel like we were already part of the journey. It built trust and excitement, making the decision to participate in the tours so much easier.",
-    avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
-  },
-  {
-    name: "Gaming Vendors",
-    role: "Platform Partners",
-    company: "Industry Leaders",
-    text: "Their ability to create engaging IPs that drive real business results is unmatched. They understand both the creative and commercial aspects of content creation.",
-    avatar:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+    name: "Pratham Barot",
+    role: "CEO",
+    company: "Zell Education",
+    text: "The team at Your Content Studio has a rare talent for making complex financial and educational topics incredibly engaging and accessible. They translated our mission at Zell into a content strategy that resonates deeply with students and builds our brand's voice. We’ve been consistently impressed with their creativity and professionalism.",
+    avatar: "/images/walloflove.jpg",
   },
 ];
 
@@ -88,10 +85,13 @@ export function HomePage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1603201667106-0e3e0ae584c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHRlYW0lMjBtZWV0aW5nfGVufDF8fHx8MTc2MDcyMTc5MHww&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Creative Team"
+          <video
+            src="/images/Homebg.MOV"
             className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
           />
           <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-blue-900/90" />
         </div>
@@ -158,6 +158,112 @@ export function HomePage() {
             <div className="w-1 h-2 bg-white rounded-full" />
           </div>
         </motion.div>
+      </section>
+
+      {/* Clients Section */}
+      <section className="py-20 bg-gray-50 overflow-hidden">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-8"
+          >
+            <h2 className="mb-4">Trusted By Leading Brands</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              We're proud to partner with innovative companies across gaming,
+              esports, and technology industries.
+            </p>
+          </motion.div>
+
+          {/* Auto-scrolling client carousel */}
+          <ClientsSlider />
+
+          {/* Static grid for smaller screens */}
+          <div className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:hidden gap-4">
+            {clients.slice(0, 6).map((client, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-white p-4 rounded-xl shadow-md flex items-center justify-center h-20 border border-gray-100"
+              >
+                <div className="flex flex-col items-center justify-center w-full h-full">
+                  <ImageWithFallback
+                    src={client.logo}
+                    alt={`${client.name} logo`}
+                    className="max-h-16 w-auto object-contain"
+                    onError={(e) => {
+                      e.currentTarget.style.display = "none";
+                      e.currentTarget.nextElementSibling?.classList.remove(
+                        "hidden"
+                      );
+                    }}
+                  />
+                  <span className="text-gray-800 text-center font-medium hidden">
+                    {client.name}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Wall of Love */}
+      <section className="py-20 bg-gradient-to-br from-purple-900 to-blue-900 text-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="mb-4 text-white">Wall of Love</h2>
+            <p className="text-gray-200 max-w-2xl mx-auto">
+              Don't just take our word for it. Here's what our clients and
+              partners have to say.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ y: -10 }}
+                className="bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20"
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gray-100">
+                    <ImageWithFallback
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      className="absolute inset-0 w-full h-full object-cover"
+                      style={{
+                        objectFit: 'cover',
+                        objectPosition: 'center'
+                      }}
+                    />
+                  </div>
+                  <div>
+                    <h4 className="text-white">{testimonial.name}</h4>
+                    <p className="text-sm text-gray-300">{testimonial.role}</p>
+                    <p className="text-sm text-gray-400">
+                      {testimonial.company}
+                    </p>
+                  </div>
+                </div>
+                <p className="text-gray-200">{testimonial.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Things Done - Stats Section */}
@@ -263,106 +369,6 @@ export function HomePage() {
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-purple-600 to-blue-600 rounded-2xl opacity-20" />
               <div className="absolute -top-6 -right-6 w-25 h-32 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl opacity-20" />
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Clients Section */}
-      <section className="py-20 bg-gray-50 overflow-hidden">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-8"
-          >
-            <h2 className="mb-4">Trusted By Leading Brands</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We're proud to partner with innovative companies across gaming,
-              esports, and technology industries.
-            </p>
-          </motion.div>
-
-          {/* Auto-scrolling client carousel */}
-          <ClientsSlider />
-
-          {/* Static grid for smaller screens */}
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:hidden gap-4">
-            {clients.slice(0, 6).map((client, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-                className="bg-white p-4 rounded-xl shadow-md flex items-center justify-center h-20 border border-gray-100"
-              >
-                <div className="flex flex-col items-center justify-center w-full h-full">
-                  <ImageWithFallback
-                    src={client.logo}
-                    alt={`${client.name} logo`}
-                    className="max-h-16 w-auto object-contain"
-                    onError={(e) => {
-                      e.currentTarget.style.display = "none";
-                      e.currentTarget.nextElementSibling?.classList.remove(
-                        "hidden"
-                      );
-                    }}
-                  />
-                  <span className="text-gray-800 text-center font-medium hidden">
-                    {client.name}
-                  </span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Wall of Love */}
-      <section className="py-20 bg-gradient-to-br from-purple-900 to-blue-900 text-white">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="mb-4 text-white">Wall of Love</h2>
-            <p className="text-gray-200 max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our clients and
-              partners have to say.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -10 }}
-                className="bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20"
-              >
-                <div className="flex items-center gap-4 mb-4">
-                  <ImageWithFallback
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full object-cover"
-                  />
-                  <div>
-                    <h4 className="text-white">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-300">{testimonial.role}</p>
-                    <p className="text-sm text-gray-400">
-                      {testimonial.company}
-                    </p>
-                  </div>
-                </div>
-                <p className="text-gray-200">{testimonial.text}</p>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>

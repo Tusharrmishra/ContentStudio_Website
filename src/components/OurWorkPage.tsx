@@ -1,5 +1,5 @@
-import { motion, AnimatePresence } from "motion/react";
-import { Play, Film, Zap, Mic, Radio, Wifi, Target, X } from "lucide-react";
+import { motion } from "motion/react";
+import { Play, Film, Zap, Mic, Radio, Wifi, Target } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { useState } from "react";
 
@@ -12,22 +12,22 @@ const categories = [
       {
         title: "FB Live (MyNaksh)",
         client: "Tech Innovations",
-        thumbnail: "https://images.unsplash.com/photo-1675119715594-30fde4bd3dbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwbWFya2V0aW5nJTIwZGVzaWdufGVufDF8fHx8MTc2MDcxODIxOHww&ixlib=rb-4.1.0&q=80&w=1080",
-        videoUrl: "https://drive.google.com/file/d/1p-cb2nvLG6iMVK458oEJPxD3JC82xxqU/view?usp=drive_link",
+        thumbnail: "https://img.youtube.com/vi/8L_fKE1cgCg/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/8L_fKE1cgCg",
         category: "Digital Ad",
       },
       {
         title: "Commentary (Adda52)",
         client: "Fashion Forward",
-        thumbnail: "https://images.unsplash.com/photo-1557838923-2985c318be48?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example2",
+        thumbnail: "https://img.youtube.com/vi/i4Cnqf8EOaA/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/i4Cnqf8EOaA",
         category: "Social Media Ad",
       },
       {
         title: "Taxi UGC (Rummy)",
         client: "Retail Plus",
-        thumbnail: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example3",
+        thumbnail: "https://img.youtube.com/vi/i4Cnqf8EOaA/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/i4Cnqf8EOaA",
         category: "TV Commercial",
       },
     ],
@@ -40,51 +40,23 @@ const categories = [
       {
         title: "Fix your Career",
         client: "Internal IP",
-        thumbnail: "https://images.unsplash.com/photo-1617899644490-fbead7fb6183?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb250ZW50JTIwY3JlYXRvciUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NjA3MzE1MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-        videoUrl: "https://www.youtube.com/watch?v=example4",
+        thumbnail: "https://img.youtube.com/vi/WpCN-VC8yus/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/watch?v=WpCN-VC8yus&t=770s",
         category: "Educational Series",
       },
       {
-        title: "Poker Zero To One",
+        title: "Voxpop",
         client: "Multiple Brands",
-        thumbnail: "https://images.unsplash.com/photo-1691180273080-aacef51379d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWxtJTIwcHJvZHVjdGlvbiUyMGNhbWVyYXxlbnwxfHx8fDE3NjA3NzEzODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-        videoUrl: "https://www.youtube.com/watch?v=example5",
+        thumbnail: "/images/clients/voxpop-thumbnail.png", // Using a local image instead
+        videoUrl: "https://www.instagram.com/p/DPqyi3pks3i/",
         category: "Documentary Series",
       },
       {
         title: "Bankroll Challenge / BigBoys Table",
         client: "Internal IP",
-        thumbnail: "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example6",
+        thumbnail: "https://img.youtube.com/vi/WjjwuL4BLwM/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/watch?v=WjjwuL4BLwM&t=546s",
         category: "Interview Series",
-      },
-    ],
-  },
-  {
-    title: "Short Films",
-    icon: Play,
-    description: "Compelling narratives that move audiences",
-    items: [
-      {
-        title: "The Journey",
-        client: "Film Festival Entry",
-        thumbnail: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example7",
-        category: "Narrative",
-      },
-      {
-        title: "Brand Story: Origins",
-        client: "StartUp Labs",
-        thumbnail: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example8",
-        category: "Brand Film",
-      },
-      {
-        title: "Innovation Unveiled",
-        client: "Tech Corp",
-        thumbnail: "https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example9",
-        category: "Corporate Film",
       },
     ],
   },
@@ -94,53 +66,25 @@ const categories = [
     description: "Engaging audio content that connects and informs",
     items: [
       {
-        title: "Tech Insights Weekly",
+        title: "JamwithNitin Podcast",
         client: "Internal Production",
-        thumbnail: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example10",
+        thumbnail: "https://img.youtube.com/vi/F17R1tGo_Xw/maxresdefault.jpg",
+        videoUrl: "https://youtu.be/F17R1tGo_Xw?si=6FQ6toZMDc6exY5U",
         category: "Tech Podcast",
       },
       {
-        title: "Startup Stories",
+        title: "IIT to Poker Podcast",
         client: "Entrepreneurship Series",
-        thumbnail: "https://images.unsplash.com/photo-1589903308904-1010c2294adc?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example11",
+        thumbnail: "https://img.youtube.com/vi/ZtjXYCy18p0/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/watch?v=ZtjXYCy18p0&t=1528s",
         category: "Business Podcast",
       },
       {
-        title: "Digital Trends Today",
+        title: "AB Devilliers (Wolf7pay)",
         client: "Industry Insights",
-        thumbnail: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example12",
+        thumbnail: "https://img.youtube.com/vi/mb81aYkVnMk/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/watch?v=mb81aYkVnMk&t=1608s",
         category: "Industry Podcast",
-      },
-    ],
-  },
-  {
-    title: "Voxpop",
-    icon: Radio,
-    description: "Real voices, authentic stories from the streets",
-    items: [
-      {
-        title: "Zell + P52 Voxpop",
-        client: "Urban Narratives",
-        thumbnail: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example13",
-        category: "Street Interview",
-      },
-      {
-        title: "Consumer Insights",
-        client: "Market Research",
-        thumbnail: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example14",
-        category: "Consumer Survey",
-      },
-      {
-        title: "Event Coverage",
-        client: "Various Events",
-        thumbnail: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example15",
-        category: "Event Interview",
       },
     ],
   },
@@ -150,24 +94,27 @@ const categories = [
     description: "Real-time engagement and interactive broadcasts",
     items: [
       {
-        title: "Gaming Tournament",
+        title: "Nikita Luther (Traitors) Live stream",
         client: "ESports League",
-        thumbnail: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example16",
+        thumbnail: "https://img.youtube.com/vi/1OMLLWUuWv4/maxresdefault.jpg",
+        videoUrl:
+          "https://www.youtube.com/live/1OMLLWUuWv4?si=BXdjGEumDc8-dEw5",
         category: "Gaming Stream",
       },
       {
-        title: "Product Launch Event",
+        title: "Live Stream with Akshay Kapoor",
         client: "Tech Company",
-        thumbnail: "https://images.unsplash.com/photo-1492724724894-7464c27d0ceb?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example17",
+        thumbnail: "https://img.youtube.com/vi/5TjndiH6JO8/maxresdefault.jpg",
+        videoUrl:
+          "https://www.youtube.com/live/5TjndiH6JO8?si=HfYM4wx96PiYULRI",
         category: "Corporate Stream",
       },
       {
-        title: "Live Workshop Series",
+        title: "AOPS Live Stream",
         client: "Educational Platform",
-        thumbnail: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example18",
+        thumbnail: "/images/clients/aops-thumbnail.png", // Using a local image instead
+        videoUrl:
+          "https://www.youtube.com/live/zVEuuQEyfhE?si=jIbfmVOHV_hDvcD0",
         category: "Educational Stream",
       },
     ],
@@ -178,45 +125,86 @@ const categories = [
     description: "Data-driven advertising optimized by artificial intelligence",
     items: [
       {
-        title: "PVR Ad",
+        title: "PVR AI Ad",
         client: "E-commerce Platform",
-        thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example19",
+        thumbnail: "https://img.youtube.com/vi/i4Cnqf8EOaA/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/i4Cnqf8EOaA",
         category: "AI Ad",
       },
       {
-        title: "MyNaksh Ad",
+        title: "AI UGC Ad",
         client: "Digital Service",
-        thumbnail: "https://images.unsplash.com/photo-1553775282-20af80779df7?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example20",
+        thumbnail: "https://img.youtube.com/vi/lqewyRttIMs/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/lqewyRttIMs",
         category: "Dynamic Ad",
       },
       {
-        title: "Conversion Optimizer",
+        title: "AI Podcast Ad",
         client: "SaaS Company",
-        thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-        videoUrl: "https://www.youtube.com/watch?v=example21",
+        thumbnail: "https://img.youtube.com/vi/6oj35aH_92k/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/6oj35aH_92k",
         category: "Performance Ad",
+      },
+    ],
+  },
+  {
+    title: "Short Form Content",
+    icon: Play,
+    description: "Compelling narratives that move audiences",
+    items: [
+      {
+        title: "How to grow Social Media ?",
+        thumbnail: "https://img.youtube.com/vi/9wjro8mBYhs/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/9wjro8mBYhs",
+      },
+      {
+        title: "Santosh wins Rs 45Cr",
+        thumbnail: "https://img.youtube.com/vi/i4Cnqf8EOaA/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/i4Cnqf8EOaA",
+      },
+      {
+        title: "How to make 1000 via poker ?",
+        thumbnail: "https://img.youtube.com/vi/cu6vArddedE/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/cu6vArddedE",
       },
     ],
   },
 ];
 
-function VideoModal({ videoUrl, isOpen, onClose }: { videoUrl: string; isOpen: boolean; onClose: () => void }) {
+function VideoModal({
+  videoUrl,
+  isOpen,
+  onClose,
+}: {
+  videoUrl: string;
+  isOpen: boolean;
+  onClose: () => void;
+}) {
   if (!isOpen) return null;
 
   // Function to get embed URL based on video URL type
   const getEmbedUrl = (url: string) => {
-    // Handle YouTube URLs
-    if (url.includes('youtube.com') || url.includes('youtu.be')) {
-      const youtubeRegex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
+    // Handle YouTube URLs (including shorts)
+    if (url.includes("youtube.com") || url.includes("youtu.be")) {
+      const youtubeRegex =
+        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?|shorts\/)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
       const match = url.match(youtubeRegex);
       const videoId = match ? match[1] : null;
-      return videoId ? `https://www.youtube.com/embed/${videoId}?autoplay=1` : url;
+      return videoId
+        ? `https://www.youtube.com/embed/${videoId}?autoplay=1`
+        : url;
     }
-    
+
+    // Handle Instagram URLs
+    if (url.includes("instagram.com")) {
+      // Convert Instagram URL to embed URL
+      const instagramUrl = new URL(url);
+      const postId = instagramUrl.pathname.split("/").filter(Boolean).pop();
+      return `https://www.instagram.com/p/${postId}/embed/`;
+    }
+
     // Handle Google Drive URLs
-    if (url.includes('drive.google.com')) {
+    if (url.includes("drive.google.com")) {
       const fileId = url.match(/\/d\/(.+?)(?:\/|$|\?)/)?.[1];
       return fileId ? `https://drive.google.com/file/d/${fileId}/preview` : url;
     }
@@ -240,7 +228,20 @@ function VideoModal({ videoUrl, isOpen, onClose }: { videoUrl: string; isOpen: b
           className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
           onClick={onClose}
         >
-          <X size={32} />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
         </button>
         <div className="relative pt-[56.25%]">
           <iframe
@@ -257,6 +258,10 @@ function VideoModal({ videoUrl, isOpen, onClose }: { videoUrl: string; isOpen: b
 
 export function OurWorkPage() {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+
+  const handleVideoClick = (videoUrl: string) => {
+    window.open(getVideoUrl(videoUrl), "_blank");
+  };
 
   return (
     <div className="min-h-screen pt-20 lg:pt-24">
@@ -316,7 +321,7 @@ export function OurWorkPage() {
                   transition={{ delay: index * 0.1 }}
                   whileHover={{ y: -10 }}
                   className="group cursor-pointer"
-                  onClick={() => setSelectedVideo(item.videoUrl)}
+                  onClick={() => handleVideoClick(item.videoUrl)}
                 >
                   <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg mb-4">
                     <ImageWithFallback
@@ -329,17 +334,19 @@ export function OurWorkPage() {
                         <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-white">
                           <Play className="text-white w-10 h-10" />
                         </div>
-                        <p className="text-white text-center mt-4 text-lg font-medium">Watch Video</p>
+                        <p className="text-white text-center mt-4 text-lg font-medium">
+                          Watch Video
+                        </p>
                       </div>
                     </div>
-                    <div className="absolute top-4 right-4">
+                    {/* <div className="absolute top-4 right-4">
                       <span className="px-3 py-1 bg-purple-600 text-white text-sm rounded-full">
                         {item.category}
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                   <h3 className="mb-2 text-xl lg:text-2xl">{item.title}</h3>
-                  <p className="text-gray-600 text-lg">{item.client}</p>
+                  {/* <p className="text-gray-600 text-lg">{item.client}</p> */}
                 </motion.div>
               ))}
             </div>
@@ -380,17 +387,46 @@ export function OurWorkPage() {
           </motion.button>
         </div>
       </section>
-
-      {/* Video Modal */}
-      <AnimatePresence>
-        {selectedVideo && (
-          <VideoModal
-            videoUrl={selectedVideo}
-            isOpen={true}
-            onClose={() => setSelectedVideo(null)}
-          />
-        )}
-      </AnimatePresence>
     </div>
   );
 }
+
+// Function to get video thumbnail URL
+const getVideoThumbnail = (videoUrl: string) => {
+  // Handle YouTube URLs (including shorts)
+  if (videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be")) {
+    const youtubeRegex =
+      /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?|shorts\/)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
+    const match = videoUrl.match(youtubeRegex);
+    const videoId = match ? match[1] : null;
+    return videoId
+      ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
+      : null;
+  }
+
+  // Handle Instagram URLs
+  if (videoUrl.includes("instagram.com")) {
+    // For Instagram, we'll need to use the provided thumbnail since we can't generate it dynamically
+    return null;
+  }
+
+  // Handle Vimeo URLs
+  if (videoUrl.includes("vimeo.com")) {
+    // For Vimeo, we'll need to use the provided thumbnail since we can't get it directly
+    return null;
+  }
+
+  return null;
+};
+
+// Function to get the video URL for redirection
+const getVideoUrl = (videoUrl: string) => {
+  // Handle YouTube shorts URLs
+  if (videoUrl.includes("youtube.com/shorts/")) {
+    const videoId = videoUrl.split("/shorts/")[1].split("?")[0];
+    return `https://www.youtube.com/watch?v=${videoId}`;
+  }
+
+  // Return the original URL for other platforms
+  return videoUrl;
+};

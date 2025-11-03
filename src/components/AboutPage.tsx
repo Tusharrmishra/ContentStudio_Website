@@ -180,7 +180,7 @@ export function AboutPage() {
               className="aspect-video lg:aspect-square rounded-2xl overflow-hidden shadow-2xl"
             >
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1673767297196-ce9739933932?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aWRlbyUyMHByb2R1Y3Rpb24lMjBzdHVkaW98ZW58MXx8fHwxNzYwNzAyODU2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/images/Aboutus1.jpg"
                 alt="Studio"
                 className="w-full h-full object-cover"
               />
@@ -192,7 +192,7 @@ export function AboutPage() {
               className="aspect-video lg:aspect-square rounded-2xl overflow-hidden shadow-2xl"
             >
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1603201667106-0e3e0ae584c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHRlYW0lMjBtZWV0aW5nfGVufDF8fHx8MTc2MDcyMTc5MHww&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/images/Aboutus2.jpg"
                 alt="Team collaboration"
                 className="w-full h-full object-cover"
               />
