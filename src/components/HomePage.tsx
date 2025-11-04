@@ -38,26 +38,22 @@ const teamMembers = [
   {
     name: "Parth Jain",
     role: "Creative Director & Founder",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop",
+    image: "/images/Team.jpg",
   },
   {
     name: "Sudhanshu Pandey",
     role: "AI Division Head",
-    image:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&fit=crop",
+    image: "/images/Team1.jpg",
   },
   {
     name: "Vaibhav",
     role: "Head Editor & Production",
-    image:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop",
+    image: "/images/Team2.jpg",
   },
   {
     name: "Deepika",
     role: "Graphic Designer",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop",
+    image: "/images/Team3.jpg",
   },
 ];
 
@@ -246,8 +242,8 @@ export function HomePage() {
                       alt={testimonial.name}
                       className="absolute inset-0 w-full h-full object-cover"
                       style={{
-                        objectFit: 'cover',
-                        objectPosition: 'center'
+                        objectFit: "cover",
+                        objectPosition: "center",
                       }}
                     />
                   </div>

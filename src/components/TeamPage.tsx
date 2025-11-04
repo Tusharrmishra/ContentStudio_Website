@@ -7,8 +7,7 @@ const teamMembers = [
     name: "Parth Jain",
     role: "Creative Director & Founder",
     // bio: "With over 10 years of experience in creative direction, Alex leads our creative vision and ensures every project tells a compelling story.",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+    image: "/images/Team.jpg",
     linkedin: "#",
     twitter: "#",
     email: "parth@yourcontentstudio.in",
@@ -17,8 +16,7 @@ const teamMembers = [
     name: "Sudhanshu Pandey",
     role: "AI Division Head",
     // bio: "Maya brings technical expertise and creative flair to every production, managing complex shoots with ease and precision.",
-    image:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop",
+    image: "/images/Team1.jpg",
     linkedin: "#",
     twitter: "#",
     // email: "maya@digitalcreator.com",
@@ -27,8 +25,7 @@ const teamMembers = [
     name: "Vaibhav",
     role: "Head Editor & Production",
     // bio: "Jordan develops data-driven creative strategies that align with business objectives and resonate with target audiences.",
-    image:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
+    image: "/images/Team2.jpg",
     linkedin: "#",
     twitter: "#",
     // email: "jordan@digitalcreator.com",
@@ -37,8 +34,7 @@ const teamMembers = [
     name: "Deepika",
     role: "Graphic Designer",
     // bio: "Sofia transforms raw footage into polished masterpieces, leading our post-production team with creativity and precision.",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
+    image: "/images/Team3.jpg",
     linkedin: "#",
     twitter: "#",
     // email: "sofia@digitalcreator.com",
@@ -47,52 +43,50 @@ const teamMembers = [
     name: "Manya",
     role: "Growth",
     // bio: "Marcus crafts stunning visuals that capture emotion and tell stories through the lens, with expertise in both film and digital.",
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
+    image: "/images/Team4.jpg",
     linkedin: "#",
     twitter: "#",
     // email: "marcus@digitalcreator.com",
   },
-  {
-    name: "Shubham ",
-    role: "DOP (Freelancers)",
-    // bio: "Emily brings ideas to life through stunning motion graphics and animation that elevate our storytelling capabilities.",
-    image:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop",
-    linkedin: "#",
-    twitter: "#",
-    // email: "emily@digitalcreator.com",
-  },
-  {
-    name: "Mayank ",
-    role: "DOP (Freelancers)",
-    // bio: "David creates immersive audio experiences that complement our visual narratives and enhance emotional impact.",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-    linkedin: "#",
-    twitter: "#",
-    // email: "david@digitalcreator.com",
-  },
+  // {
+  //   name: "Shubham ",
+  //   role: "DOP (Freelancers)",
+  //   // bio: "Emily brings ideas to life through stunning motion graphics and animation that elevate our storytelling capabilities.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop",
+  //   linkedin: "#",
+  //   twitter: "#",
+  //   // email: "emily@digitalcreator.com",
+  // },
+  // {
+  //   name: "Mayank ",
+  //   role: "DOP (Freelancers)",
+  //   // bio: "David creates immersive audio experiences that complement our visual narratives and enhance emotional impact.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+  //   linkedin: "#",
+  //   twitter: "#",
+  //   // email: "david@digitalcreator.com",
+  // },
   {
     name: "Sohail Khan",
     role: "Video Production",
     // bio: "Lisa ensures smooth client relationships and project delivery, bridging creative vision with business objectives.",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
+    image: "/images/Team6.jpg",
     linkedin: "#",
     twitter: "#",
     // email: "lisa@digitalcreator.com",
   },
-  {
-    name: "Ajay K",
-    role: "Editor",
-    // bio: "Lisa ensures smooth client relationships and project delivery, bridging creative vision with business objectives.",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
-    linkedin: "#",
-    twitter: "#",
-    // email: "lisa@digitalcreator.com",
-  },
+  // {
+  //   name: "Ajay K",
+  //   role: "Editor",
+  //   // bio: "Lisa ensures smooth client relationships and project delivery, bridging creative vision with business objectives.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
+  //   linkedin: "#",
+  //   twitter: "#",
+  //   // email: "lisa@digitalcreator.com",
+  // },
 ];
 
 export function TeamPage() {

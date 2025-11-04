@@ -10,7 +10,7 @@ const categories = [
     description: "High-impact advertising content that converts",
     items: [
       {
-        title: "FB Live (MyNaksh)",
+        title: "Instagram Live (MyNaksh)",
         client: "Tech Innovations",
         thumbnail: "https://img.youtube.com/vi/8L_fKE1cgCg/maxresdefault.jpg",
         videoUrl: "https://www.youtube.com/shorts/8L_fKE1cgCg",
@@ -19,15 +19,15 @@ const categories = [
       {
         title: "Commentary (Adda52)",
         client: "Fashion Forward",
-        thumbnail: "https://img.youtube.com/vi/i4Cnqf8EOaA/maxresdefault.jpg",
-        videoUrl: "https://www.youtube.com/shorts/i4Cnqf8EOaA",
+        thumbnail: "https://img.youtube.com/vi/44LIgmPHaB0/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/44LIgmPHaB0",
         category: "Social Media Ad",
       },
       {
         title: "Taxi UGC (Rummy)",
         client: "Retail Plus",
-        thumbnail: "https://img.youtube.com/vi/i4Cnqf8EOaA/maxresdefault.jpg",
-        videoUrl: "https://www.youtube.com/shorts/i4Cnqf8EOaA",
+        thumbnail: "https://img.youtube.com/vi/iRK_xl6zM9s/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/iRK_xl6zM9s",
         category: "TV Commercial",
       },
     ],
@@ -47,8 +47,8 @@ const categories = [
       {
         title: "Voxpop",
         client: "Multiple Brands",
-        thumbnail: "/images/clients/voxpop-thumbnail.png", // Using a local image instead
-        videoUrl: "https://www.instagram.com/p/DPqyi3pks3i/",
+        thumbnail: "https://img.youtube.com/vi/E13XurT5usY/maxresdefault.jpg", // Using a local image instead
+        videoUrl: "https://www.youtube.com/shorts/E13XurT5usY",
         category: "Documentary Series",
       },
       {
@@ -114,7 +114,7 @@ const categories = [
         client: "Educational Platform",
         thumbnail: "/images/clients/aops-thumbnail.png", // Using a local image instead
         videoUrl:
-          "https://www.youtube.com/live/zVEuuQEyfhE?si=jIbfmVOHV_hDvcD0",
+          "https://www.youtube.com/live/zVEuuQEyfhE?si=0yKbDWqS14VIU0ht",
         category: "Educational Stream",
       },
     ],
@@ -154,13 +154,13 @@ const categories = [
     items: [
       {
         title: "How to grow Social Media ?",
-        thumbnail: "https://img.youtube.com/vi/9wjro8mBYhs/maxresdefault.jpg",
-        videoUrl: "https://www.youtube.com/shorts/9wjro8mBYhs",
+        thumbnail: "https://img.youtube.com/vi/wEVI9OJ4b2c/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/wEVI9OJ4b2c",
       },
       {
         title: "Santosh wins Rs 45Cr",
-        thumbnail: "https://img.youtube.com/vi/i4Cnqf8EOaA/maxresdefault.jpg",
-        videoUrl: "https://www.youtube.com/shorts/i4Cnqf8EOaA",
+        thumbnail: "https://img.youtube.com/vi/QQ4aMEooIcg/maxresdefault.jpg",
+        videoUrl: "https://www.youtube.com/shorts/QQ4aMEooIcg",
       },
       {
         title: "How to make 1000 via poker ?",
