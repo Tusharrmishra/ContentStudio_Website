@@ -7,6 +7,7 @@ import { TeamPage } from "./components/TeamPage";
 import { AboutPage } from "./components/AboutPage";
 import { ClientsPage } from "./components/ClientsPage";
 import { ContactPage } from "./components/ContactPage";
+import { GalleryPage } from "./components/GalleryPage";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -31,6 +32,8 @@ export default function App() {
         return <OurWorkPage />;
       case "case-studies":
         return <CaseStudiesPage />;
+      case "gallery":
+        return <GalleryPage />;
       case "team":
         return <TeamPage />;
       case "about":

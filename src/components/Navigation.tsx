@@ -14,6 +14,7 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
     { name: "Home", id: "home" },
     { name: "Our Work", id: "work" },
     { name: "Case Studies", id: "case-studies" },
+    { name: "Gallery", id: "gallery" },
     { name: "Team", id: "team" },
     { name: "About Us", id: "about" },
     { name: "Clients", id: "clients" },
