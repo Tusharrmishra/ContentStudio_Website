@@ -23,7 +23,7 @@ export function ContactPage() {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbwUb0dt-bTzVGAygchj237BW_U99KhFBwi3kfzE3iQffmLQmichd3oPOx5FkFjHq9El_g/exec",
+        "https://script.google.com/macros/s/AKfycbx8GeqexE4JJwN9eAI0mMq9aHyRmgASJbwZH-WVbPq7gC_avnFmMINY1l7poha_L7MMDw/exec",
         {
           method: "POST",
           mode: "no-cors", // required for Google Apps Script
@@ -147,6 +147,7 @@ export function ContactPage() {
                       onChange={handleChange}
                       disabled={isSubmitting}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 disabled:opacity-50 disabled:cursor-not-allowed"
+                      maxLength={10}
                     />
                   </div>
                 </div>
