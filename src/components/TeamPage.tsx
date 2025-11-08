@@ -77,16 +77,24 @@ const teamMembers = [
     twitter: "#",
     // email: "lisa@digitalcreator.com",
   },
-  // {
-  //   name: "Ajay K",
-  //   role: "Editor",
-  //   // bio: "Lisa ensures smooth client relationships and project delivery, bridging creative vision with business objectives.",
-  //   image:
-  //     "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
-  //   linkedin: "#",
-  //   twitter: "#",
-  //   // email: "lisa@digitalcreator.com",
-  // },
+  {
+    name: "Mayank",
+    role: "DOP",
+    // bio: "Lisa ensures smooth client relationships and project delivery, bridging creative vision with business objectives.",
+    image: "/images/Team7.jpg",
+    linkedin: "#",
+    twitter: "#",
+    // email: "lisa@digitalcreator.com",
+  },
+  {
+    name: "Shubham Bhandari",
+    role: "DOP",
+    // bio: "Lisa ensures smooth client relationships and project delivery, bridging creative vision with business objectives.",
+    image: "/images/Team8.png",
+    linkedin: "#",
+    twitter: "#",
+    // email: "lisa@digitalcreator.com",
+  },
 ];
 
 export function TeamPage() {

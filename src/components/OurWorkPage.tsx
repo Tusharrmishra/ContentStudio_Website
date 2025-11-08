@@ -110,11 +110,12 @@ const categories = [
         category: "Corporate Stream",
       },
       {
-        title: "AOPS Live Stream",
+        title: "100 Stream Challenge",
         client: "Educational Platform",
-        thumbnail: "/images/clients/aops-thumbnail.png", // Using a local image instead
+        // thumbnail: "/images/clients/aops-thumbnail.png", // Using a local image instead
+        thumbnail: "https://img.youtube.com/vi/imercLMhNXA/maxresdefault.jpg",
         videoUrl:
-          "https://www.youtube.com/live/zVEuuQEyfhE?si=0yKbDWqS14VIU0ht",
+          "https://www.youtube.com/live/imercLMhNXA?si=aDlYrzl3saPga-72",
         category: "Educational Stream",
       },
     ],
