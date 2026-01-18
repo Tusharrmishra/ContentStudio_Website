@@ -31,7 +31,7 @@ export function ContactPage() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(formData),
-        }
+        },
       );
 
       alert("Thank you for your message! We'll get back to you soon.");
@@ -55,7 +55,7 @@ export function ContactPage() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     setFormData({
       ...formData,

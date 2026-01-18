@@ -118,7 +118,7 @@ export function HomePage() {
             whileTap={{ scale: 0.95 }}
             onClick={() =>
               window.dispatchEvent(
-                new CustomEvent("navigate", { detail: "work" })
+                new CustomEvent("navigate", { detail: "work" }),
               )
             }
             className="px-8 py-4 bg-white text-purple-900 rounded-lg hover:bg-gray-100 transition-colors"
@@ -134,7 +134,7 @@ export function HomePage() {
             whileTap={{ scale: 0.95 }}
             onClick={() =>
               window.dispatchEvent(
-                new CustomEvent("navigate", { detail: "contact" })
+                new CustomEvent("navigate", { detail: "contact" }),
               )
             }
             className="px-8 py-4 bg-white text-purple-900 rounded-lg hover:bg-gray-100 transition-colors"
@@ -194,7 +194,7 @@ export function HomePage() {
                     onError={(e) => {
                       e.currentTarget.style.display = "none";
                       e.currentTarget.nextElementSibling?.classList.remove(
-                        "hidden"
+                        "hidden",
                       );
                     }}
                   />

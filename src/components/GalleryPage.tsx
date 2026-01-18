@@ -37,11 +37,11 @@ export function GalleryPage() {
     setSelectedIndex((idx) =>
       idx === null
         ? null
-        : (idx - 1 + galleryItems.length) % galleryItems.length
+        : (idx - 1 + galleryItems.length) % galleryItems.length,
     );
   const nextItem = () =>
     setSelectedIndex((idx) =>
-      idx === null ? null : (idx + 1) % galleryItems.length
+      idx === null ? null : (idx + 1) % galleryItems.length,
     );
 
   useEffect(() => {

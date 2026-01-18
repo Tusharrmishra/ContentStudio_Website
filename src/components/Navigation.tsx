@@ -18,6 +18,7 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
     { name: "Team", id: "team" },
     { name: "About Us", id: "about" },
     { name: "Clients", id: "clients" },
+    { name: "AI Ads", id: "ai-ads" },
     { name: "Contact Us", id: "contact" },
   ];
 

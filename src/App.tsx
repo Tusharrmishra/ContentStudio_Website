@@ -6,6 +6,7 @@ import { CaseStudiesPage } from "./components/CaseStudiesPage";
 import { TeamPage } from "./components/TeamPage";
 import { AboutPage } from "./components/AboutPage";
 import { ClientsPage } from "./components/ClientsPage";
+import { AIAdsPage } from "./components/AIAdsPage";
 import { ContactPage } from "./components/ContactPage";
 import { GalleryPage } from "./components/GalleryPage";
 
@@ -40,6 +41,8 @@ export default function App() {
         return <AboutPage />;
       case "clients":
         return <ClientsPage />;
+      case "ai-ads":
+        return <AIAdsPage />;
       case "contact":
         return <ContactPage />;
       default:

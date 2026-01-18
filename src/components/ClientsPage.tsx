@@ -225,7 +225,7 @@ export function ClientsPage() {
                       onError={(e) => {
                         e.currentTarget.style.display = "none";
                         e.currentTarget.nextElementSibling?.classList.remove(
-                          "hidden"
+                          "hidden",
                         );
                       }}
                     />
